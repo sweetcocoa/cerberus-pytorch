@@ -24,7 +24,9 @@ This implementation did not achieve as much performance as reported in the paper
 - Note : There's no benchmark dataset. These results are measured on data I randomly created using test set of Slakh2100 dataset. So It is not appropriate to quantitatively compare these results with those reported in the paper.
 
 ## Pretrained Network & config
-- TO BE UPLOADED HERE (SOON)
+
+- [Weight(ckpt)](https://github.com/sweetcocoa/cerberus-pytorch/raw/weights/weights/last.ckpt)
+- [Config(yaml)](https://github.com/sweetcocoa/cerberus-pytorch/raw/weights/weights/hparams.yaml)
 
 
 ## Inference
