@@ -1,0 +1,13 @@
+backtrace
+librosa
+mido
+mir-eval==0.6
+numpy
+omegaconf
+pretty-midi
+pytorch-lightning==1.0.4
+torch==1.7.0+cu92
+torchaudio==0.7.0
+torchsummary
+torchvision==0.8.1
+tqdm
