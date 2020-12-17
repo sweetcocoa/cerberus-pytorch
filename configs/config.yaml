@@ -1,0 +1,55 @@
+batch_size: 40
+experiment_name: cerberus
+gpu: 0
+num_gpu: 1
+heads: ['sep', 'dc', 'tr']
+# heads: ['sep', 'tr']
+lr: 1.0e-04
+lr_decay: 0.98
+lr_min: 1.0e-07
+lr_scheduler: multistep
+num_workers: 24
+optimizer: rmsprop
+sr: 16000
+seed: 940513
+data_dir: "/mnt/ssd3/mlproject/data/slakh2100_flac_16k/"
+
+loss_alpha: 0.00001
+loss_beta: 0.1
+loss_gamma: 0.8 
+num_pitches: 88
+midi_min: 21
+transcription_threshold: 0.4
+n_fft: 1024
+hop_length: 256
+
+lstm_hidden_size: 300
+lstm_num_layers: 4
+lstm_bidirectional: True
+embedding_size: 20
+dropout_rate: 0.3
+
+num_inst: 3
+# num_inst: 4
+inst: ["Piano", "Bass", "Drums"]
+# inst: ["Piano", "Bass", "Guitar"]
+# inst: ["Piano", "Bass", "Drums", "Guitar"]
+metrics:
+  - valid_total_loss: 0.
+  - train_total_loss: 0.
+  - train_mask_inference_loss: 0.
+  - valid_mask_inference_loss: 0.
+  - train_tr_loss: 0.
+  - valid_tr_loss: 0.
+duration: 2.0
+
+num_epochs: 3000
+gradient_clip_val: 3.0
+find_lr: false
+
+sample_audio:
+  path: "/mnt/ssd3/mlproject/data/beatles_16000.wav"
+  offset: 1264000
+  num_frames: 160000
+
+check_val_every_n_epoch: 5
