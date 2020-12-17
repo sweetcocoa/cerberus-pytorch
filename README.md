@@ -34,7 +34,8 @@ python inference.py hparams.yaml weight.ckpt input.wav output_dir/
 ```
 
 - Expected Results:
-![results](./src/exp.png)
+
+    ![results](./assets/exp.png)
 
 
 ## Training with Slakh2100 Dataset
